@@ -13,3 +13,6 @@
 
 * [Setup](microsoft-entra/setup.md)
 * [Active Directory B2B](microsoft-entra/active-directory-b2b.md)
+* [Active Directory B2C](microsoft-entra/active-directory-b2c.md)
+* [Azure Key Vault](microsoft-entra/azure-key-vault.md)
+* [Verified Identity](microsoft-entra/verified-identity.md)
