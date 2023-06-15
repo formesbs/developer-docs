@@ -2,6 +2,10 @@
 
 * [README](README.md)
 
+## Architecture
+
+* [Site Hierarchy](architecture/site-hierarchy.md)
+
 ## Stack
 
 * [Python](stack/python/README.md)
@@ -16,7 +20,3 @@
 * [Active Directory B2C](microsoft-entra/active-directory-b2c.md)
 * [Azure Key Vault](microsoft-entra/azure-key-vault.md)
 * [Verified Identity](microsoft-entra/verified-identity.md)
-
-## Architecture
-
-* [Site Hierarchy](architecture/site-hierarchy.md)

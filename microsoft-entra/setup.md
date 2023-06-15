@@ -4,6 +4,8 @@ description: Configure Azure and Entra
 
 # Setup
 
+The Verified ID component will need to be created in an AD B2C tenant to issue VCs to the public user base.
+
 {% hint style="info" %}
 ​[https://learn.microsoft.com/en-us/azure/active-directory/verifiable-credentials/verifiable-credentials-configure-tenant](https://learn.microsoft.com/en-us/azure/active-directory/verifiable-credentials/verifiable-credentials-configure-tenant)
 {% endhint %}
@@ -22,5 +24,6 @@ description: Configure Azure and Entra
 5. Create a new **AD B2C tenant**
    1. Link the subscription and resource group
 6. Switch to the newly created tenant
-7. Create a new **Azure Key Vault**
-8. Setup **Verified ID**
+7. Create a new **Web Application** within the B2C tenant
+8. Create a new **Azure Key Vault**
+9. Setup **Verified ID**
