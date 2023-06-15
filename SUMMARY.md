@@ -20,3 +20,4 @@
 * [Active Directory B2C](microsoft-entra/active-directory-b2c.md)
 * [Azure Key Vault](microsoft-entra/azure-key-vault.md)
 * [Verified Identity](microsoft-entra/verified-identity.md)
+* [Verified Credential App](microsoft-entra/verified-credential-app.md)
