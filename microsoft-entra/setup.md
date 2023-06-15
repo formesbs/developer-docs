@@ -15,12 +15,12 @@ description: Configure Azure and Entra
 
 ### Quick Start <a href="#quick-start" id="quick-start"></a>
 
-1. 1.Create Microsoft **Azure account**
-2. 2.Login to [https://portal.azure.com](https://portal.azure.com/)​
-3. 3.Create a new **subscription**
-4. 4.Create a new **resource group**
-5. 5.Create a new **AD B2C tenant**
-   1. 1.Link the subscription and resource group
-6. 6.Switch to the newly created tenant
-7. 7.Create a new **Azure Key Vault**
-8. 8.Setup **Verified ID**
+1. Create Microsoft **Azure account**
+2. Login to [https://portal.azure.com](https://portal.azure.com/)​
+3. Create a new **subscription**
+4. Create a new **resource group**
+5. Create a new **AD B2C tenant**
+   1. Link the subscription and resource group
+6. Switch to the newly created tenant
+7. Create a new **Azure Key Vault**
+8. Setup **Verified ID**
