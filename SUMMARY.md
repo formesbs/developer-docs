@@ -35,6 +35,7 @@
   * [Organize Assets](grouping/functionality/organize-assets.md)
   * [Organize People](grouping/functionality/organize-people.md)
 * [Object Schema](grouping/object-schema.md)
+* [Item](grouping/item.md)
 
 ## User Experience
 
