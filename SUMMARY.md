@@ -28,4 +28,24 @@
 
 ## Grouping
 
+* [Current Solutions](grouping/current-solutions.md)
+* [Pub Sub Model](grouping/pub-sub-model.md)
+* [Functionality](grouping/functionality/README.md)
+  * [Organize Groups](grouping/functionality/organize-groups.md)
+  * [Organize Assets](grouping/functionality/organize-assets.md)
+  * [Organize People](grouping/functionality/organize-people.md)
 * [Object Schema](grouping/object-schema.md)
+
+## User Experience
+
+* [Authentication](user-experience/authentication/README.md)
+  * [Sign Up](user-experience/authentication/sign-up.md)
+  * [Sign On](user-experience/authentication/sign-on.md)
+  * [Logout](user-experience/authentication/logout.md)
+  * [Password Reset](user-experience/authentication/password-reset.md)
+* [Chat](user-experience/chat.md)
+* [User Dashboard](user-experience/user-dashboard/README.md)
+  * [Identity Info & Settings](user-experience/user-dashboard/identity-info-and-settings.md)
+  * [Subscribed Groups](user-experience/user-dashboard/subscribed-groups.md)
+  * [Owned/Managed Groups](user-experience/user-dashboard/owned-managed-groups.md)
+* [Group Page](user-experience/group-page.md)
