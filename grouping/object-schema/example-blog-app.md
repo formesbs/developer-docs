@@ -22,7 +22,7 @@
     "creds": ["vc:0"],
     "data": "{
                 'title': 'My Roles',
-                'schema': [{'role': 'str'}]
+                'schema': [{'role': 'str', 'unique': true}] //forces unique 
             }"
 }
 
@@ -101,7 +101,7 @@
     "creds": ["vc:0.2"],
     "data": "{
                 'title': 'Ratings',
-                'schema': [{'selection': ['👍', '👎']}]
+                'schema': [{'selection': ['👍', '👎'], 'unique': '1'}]
             }"
 }
 
@@ -112,6 +112,8 @@
     "creds": ["vc:0.2"],
     "data": "{'selection': '👍'}"
 }
+
+// get ratings from the latest public post
 ```
 
 ## Result
