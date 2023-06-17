@@ -18,6 +18,16 @@ description: How groups are made
 }
 </code></pre>
 
+## Data Object Schema
+
+```json
+{
+    "title": <string>, //title for the data object
+    "link": <string>, //a link to an anchor object, only required for top level grouping
+    "schema": [{<string>: <string>}] //a list containing key: value pairs
+}
+```
+
 ## Example - Organizing DID roles in a public organization
 
 ```json
@@ -25,11 +35,11 @@ description: How groups are made
 {
     "nonce": "0",
     "owner": ["did:1.2.3.4"],
-    "creds": ["vc0"],
+    "creds": ["vc:0"],
     "data": "{
                 'title': 'My Group',
-                'link': 'id-0123456789' //nft asset is linked to this group
-                'schema': ['title-str', 'schema-list<str>']
+                'link': 'id-0123456789', //nft asset is linked to this group
+                'schema': [{'title': 'str'}, {'schema': 'list<str>'}]
             }"
 }
 
@@ -40,7 +50,7 @@ description: How groups are made
     "creds": ["None=inherit super"],
     "data": "{
                 'title': 'My Roles',
-                'schema': ['role-str']
+                'schema': [{'role': 'str'}]
             }"
 }
 
@@ -48,14 +58,67 @@ description: How groups are made
 {
     "nonce": "0.0.0",  //third layer nonce
     "owner": ["did:1.2.3.4"],
-    "creds": ["vc1"], //create a new VC for an admin
+    "creds": ["vc:0.1"], //create a new VC for an admin
     "data": "{'role': 'admin'}"
 }
 
+// An end user will be issued a VC
 {
     "nonce": "0.0.1",
     "owner": ["did:1.2.3.4"],
-    "creds": ["vc2"], //create a new VC for a public user
+    "creds": ["vc:0.2"], //create a new VC for a public user
     "data": "{'role': 'public user'}"
+}
+```
+
+## Example - Adding a subscription to the group
+
+```json
+// Create a new group under nonce 0 to hold the posts
+{
+    "nonce": "0.1",
+    "owner": ["did:1.2.3.4"],
+    "creds": ["vc:0"], 
+    "data": "{
+                'title': 'My Posts',
+                'schema': [{'title':'str'}, {'post':'str'}]
+            }"
+}
+
+// Add a new post to the group that is accessible to public users
+{
+    "nonce": "0.1.0",
+    "owner": ["did:1.2.3.4"],
+    "creds": ["vc:0.2"],
+    "data": "{
+                'title': 'Hello World!',
+                'post': 'Welcome to my group.'
+            }"
+}
+
+// Add a new post that is accessible to admins only
+{
+    "nonce": "0.1.1",
+    "owner": ["did:1.2.3.4"],
+    "creds": ["vc:0.1"],
+    "data": "{
+                'title': 'Hello Mods!',
+                'post': 'Thank you for helping out.'
+            }"
+}
+```
+
+## Example - Adding user ratings to the posts
+
+```json
+// create a new group below the posts
+{
+    "nonce": "0.0.0.0",
+    "owner": ["did:1.2.3.4"],
+    "creds": ["vc:0.2"],
+    "data": "{
+                'title': 'Rating',
+                'schema': [{'selection': ['👍', '👎']}]
+            }"
 }
 ```
