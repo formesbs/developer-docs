@@ -34,7 +34,8 @@
   * [Organize Groups](grouping/functionality/organize-groups.md)
   * [Organize Assets](grouping/functionality/organize-assets.md)
   * [Organize People](grouping/functionality/organize-people.md)
-* [Object Schema](grouping/object-schema.md)
+* [Object Schema](grouping/object-schema/README.md)
+  * [Example Blog App](grouping/object-schema/example-blog-app.md)
 * [Item](grouping/item.md)
 
 ## User Experience
